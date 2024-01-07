@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -60,7 +60,7 @@
 }
 
 .card h2 {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.7rem;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .center::after {
-  background: var(--primary-glow);
+  /* background: var(--primary-glow); */
   width: 240px;
   height: 180px;
   z-index: -1;
@@ -104,9 +104,13 @@
   transform: translateZ(0);
 }
 
-.logo,
+/* .logo,
 .thirteen {
   position: relative;
+} */
+
+.title {
+  font-size: 2.2rem;
 }
 
 .thirteen {
@@ -123,23 +127,23 @@
   box-shadow: 0px 2px 8px -1px #0000001a;
 }
 
-.thirteen::before,
+/* .thirteen::before,
 .thirteen::after {
   content: '';
   position: absolute;
   z-index: -1;
-}
+} */
 
 /* Conic Gradient Animation */
-.thirteen::before {
+/* .thirteen::before {
   animation: 6s rotate linear infinite;
   width: 200%;
   height: 200%;
   background: var(--tile-border);
-}
+} */
 
 /* Inner Square */
-.thirteen::after {
+/* .thirteen::after {
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
@@ -149,7 +153,7 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
-}
+} */
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -164,9 +168,9 @@
 }
 
 @media (prefers-reduced-motion) {
-  .thirteen::before {
+  /* .thirteen::before {
     animation: none;
-  }
+  } */
 
   .card:hover span {
     transform: none;
@@ -262,10 +266,10 @@
     filter: invert(1);
   }
 
-  .logo,
+  /* .logo,
   .thirteen img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+  } */
 }
 
 @keyframes rotate {
